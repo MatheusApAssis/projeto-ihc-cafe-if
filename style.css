@@ -233,3 +233,13 @@ body {
 .Copy {
   color: var(--color-secondary);
 }
+
+.control {
+  border: none;
+  background: transparent;
+  padding: 0px 10px;
+}
+.mixitup-control-active {
+  color: var(--color-primary);
+  font-weight: bold;
+}
