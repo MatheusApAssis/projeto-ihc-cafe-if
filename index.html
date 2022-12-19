@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./style.css" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,11 +24,11 @@
       src="https://kit.fontawesome.com/0393c3a9f9.js"
       crossorigin="anonymous"
     ></script>
-    <title>E-commerce</title>
+    <title>Qualidade do Café IF</title>
   </head>
   <body>
     <!-- navBar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg border-bottom">
       <div class="container">
         <a class="navbar-brand" href="#">Qualidade do Café</a>
         <button
@@ -41,30 +42,21 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto my-2 mb-lg-0">
+        <div
+          class="collapse navbar-collapse d-lg-flex justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav my-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Men's</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#"> Women </a>
+              <a class="nav-link" href="#Promotions">Promoção</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Kid's</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Contact</a>
+              <a class="nav-link" href="#Products">Produtos</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <span><i class="fa-regular fa-heart"></i></span>
-            <span><i class="fab fa-opencart px-3"></i></span>
-            <span><i class="fa-regular fa-user"></i></span>
-          </form>
         </div>
       </div>
     </nav>
@@ -73,316 +65,240 @@
     <!-- ================================================main================================== -->
 
     <section class="main">
-      <div class="container">
-        <div class="row pt-5">
-          <div class="col-lg-6 pt-5">
-            <p class="m-0 pt-5">WINTER FASHION</p>
-            <h1>Fashion Colection 2021</h1>
-            <button class="btn2 mt-3">SHOP NOW</button>
+      <div class="container banner">
+        <div class="d-lg-flex">
+          <div class="pt-lg-5 flex-fill">
+            <div class="flex-fill pt-5">
+              <p class="m-0 pt-5">CAmpeão em café</p>
+              <h1>A Felicidade começa no café</h1>
+              <a href="#Products"
+                ><button class="btn2 mt-3">Ver Produtos</button></a
+              >
+            </div>
           </div>
+          <img class="mw-100" src="./imgs/coffee-banner.png" alt="" />
         </div>
       </div>
     </section>
 
     <!-- =============================================================== -->
     <section class="iconic py-5">
-      <div class="container text-center py-5">
-        <div class="row pb-5">
-          <div class="col-lg-4">
-            <span><i class="fas fa-truck icon"></i></span>
-            <h3 class="py-3">Free Shiping</h3>
-            <p>sha384-r4NyP46KrjDleawBgD5tp8Y7 UzmLA05oM1iAEQ17CSuDqnUK2</p>
-          </div>
-
-          <div class="col-lg-4">
-            <span><i class="fas fa-address-card icon"></i></span>
-            <h3 class="py-3">Free Shiping</h3>
-            <p>sha384-r4NyP46KrjDleawBgD5tp 8Y7UzmLA05oM1iAEQ17CSuDqnUK2</p>
-          </div>
-
-          <div class="col-lg-4">
-            <span><i class="fas fa-calendar-alt icon"></i></span>
-            <h3 class="py-3">Free Shiping</h3>
-            <p>sha384-r4NyP46KrjDleawBgD5tp8Y7U zmLA05oM1iAEQ17CSuDqnUK2</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="next py-5">
-      <div class="container-fluid py-5">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="card zoom-n-rotate">
-              <img src="./imgs/beautiful.jpg" class="img-fluid" alt="" />
-              <button class="btnc">Shop For More</button>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card zoom-n-rotate">
-              <img src="./imgs/girly.jpg" class="img-fluid" alt="" />
-              <button class="btnc">Shop For More</button>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card zoom-n-rotate">
-              <img src="./imgs/mann.jpg" class="img-fluid" alt="" />
-              <button class="btnc">Shop For More</button>
-            </div>
-          </div>
-        </div>
+      <div class="container text-center mw-100">
+        <img
+          class="mw-100"
+          src="./imgs/banner-desconto.webp"
+          alt="banner desconto"
+        />
       </div>
     </section>
 
     <!-- =============================================================== -->
-    <section class="product py-5">
+    <section id="Promotions" class="product py-5">
       <div class="container py-5">
-        <h1>Our Product</h1>
+        <h1>Promoção</h1>
 
-        <div class="row pt-5">
-          <div class="col-lg-3">
-            <div class="card border-0">
-              <div class="card-body py-5 bg-light">
-                <img src="./imgs/beauti.png" class="img-fluid" alt="" />
-              </div>
-              <div class="card-footer border-0 text-center bg-white">
-                <h5>Girls Bag</h5>
-                <p class="m-0">R$29.99</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3">
-            <div class="card border-0">
-              <div class="card-body py-5 bg-light">
-                <img src="./imgs/plo.png" class="img-fluid" alt="" />
-              </div>
-              <div class="discount">-23%</div>
-              <div class="card-footer border-0 text-center bg-white">
-                <h5>Mens Shirt</h5>
-                <p class="m-0">R$29.99</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3">
-            <div class="card border-0">
-              <div class="card-body py-5 bg-light">
-                <img src="./imgs/beauti.png" class="img-fluid" alt="" />
-              </div>
-              <div class="card-footer border-0 text-center bg-white">
-                <h5>Girls Bag</h5>
-                <p class="m-0">R$29.99</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3">
-            <div class="card border-0">
-              <div class="card-body py-5 bg-light">
-                <img src="./imgs/beauti.png" class="img-fluid" alt="" />
-              </div>
-              <div class="card-footer border-0 text-center bg-white">
-                <h5>Girls Bag</h5>
-                <p class="m-0">R$29.99</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- =========2ª fileira=================== -->
-        <div class="row pt-5">
-          <div class="col-lg-3">
-            <div class="card border-0">
-              <div class="card-body py-5 bg-light">
-                <img src="./imgs/beauti.png" class="img-fluid" alt="" />
-              </div>
-              <div class="card-footer border-0 text-center bg-white">
-                <h5>Girls Bag</h5>
-                <p class="m-0">R$29.99</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3">
-            <div class="card border-0">
-              <div class="card-body py-5 bg-light">
-                <img src="./imgs/plo.png" class="img-fluid" alt="" />
-              </div>
-              <div class="discount">-23%</div>
-              <div class="card-footer border-0 text-center bg-white">
-                <h5>Mens Shirt</h5>
-                <p class="m-0">R$29.99</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3">
-            <div class="card border-0">
-              <div class="card-body py-5 bg-light">
-                <img src="./imgs/beauti.png" class="img-fluid" alt="" />
-              </div>
-              <div class="card-footer border-0 text-center bg-white">
-                <h5>Girls Bag</h5>
-                <p class="m-0">R$29.99</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3">
-            <div class="card border-0">
-              <div class="card-body py-5 bg-light">
-                <img src="./imgs/beauti.png" class="img-fluid" alt="" />
-              </div>
-              <div class="discount">-30%</div>
-              <div class="card-footer border-0 text-center bg-white">
-                <h5>Girls Bag</h5>
-                <p class="m-0">R$29.99</p>
-              </div>
-            </div>
-          </div>
+        <div class="row pt-5 gallery-promo">
+          <!-- Show promo -->
         </div>
       </div>
     </section>
     <!-- ==================================================================================== -->
-    <section class="filter my-5">
+    <section id="Products" class="filter my-5">
       <div class="container-fluid py-5">
         <div class="row py-5">
           <div class="col-lg-5 text-center">
-            <h1>New Arrivals</h1>
+            <h1>Todos Produtos</h1>
           </div>
           <div class="col-lg-6 m-auto text-center">
-            <button type="button" class="control" data-filter="all">All</button>
-            <button type="button" class="control" data-filter=".green">
-              Green
+            <button type="button" class="control" data-filter="all">
+              Todos
             </button>
-            <button type="button" class="control" data-filter=".blue">
-              Blue
+            <button type="button" class="control" data-filter=".capsula">
+              Cápsulas
             </button>
-            <button type="button" class="control" data-filter=".pink">
-              Pink
-            </button>
-            <button type="button" class="control" data-filter=".pink">
-              Pink
+            <button type="button" class="control" data-filter=".grao">
+              Grãos
             </button>
           </div>
         </div>
-        <div class="row pt-5 g-2">
-          <div class="col-lg-4 mix blue">
-            <div class="card border-0">
-              <img src="./imgs/happy.jpg" class="img-fluid" alt="" />
-              <div class="circle1"><i class="fas fa-shopping-cart"></i></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mix pink">
-            <div class="card border-0">
-              <img src="./imgs/horizental.jpg" class="img-fluid" alt="" />
-              <div class="circle1"><i class="fas fa-shopping-cart"></i></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mix pink">
-            <div class="card border-0">
-              <img src="./imgs/portrait.jpg" class="img-fluid" alt="" />
-              <div class="circle1"><i class="fas fa-shopping-cart"></i></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mix green">
-            <div class="card border-0">
-              <img src="./imgs/two.jpg" class="img-fluid" alt="" />
-              <div class="circle1"><i class="fas fa-shopping-cart"></i></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mix green">
-            <div class="card border-0">
-              <img src="./imgs/african.jpg" class="img-fluid" alt="" />
-              <div class="circle1"><i class="fas fa-shopping-cart"></i></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mix blue">
-            <div class="card border-0">
-              <img src="./imgs/redhead.jpg" class="img-fluid" alt="" />
-              <div class="circle1"><i class="fas fa-shopping-cart"></i></div>
-            </div>
-          </div>
+        <div class="row gallery-container">
+          <!-- Loja de café -->
         </div>
       </div>
     </section>
 
     <!-- =============================================================== -->
-    <section class="news pt-5">
-      <div class="container-fluid pt-3 text-white">
-        <div class="row">
-          <div class="col-lg-11 m-auto">
-            <div class="row">
-              <div class="col-lg-2">
-                <h3 class="pb-3">Category</h3>
-                <p class="m-0"><a href="">Male</a></p>
-                <p class="m-0"><a href="">Female</a></p>
-                <p class="m-0"><a href="">Shoes</a></p>
-                <p class="m-0"><a href="">Fashion</a></p>
-              </div>
+    <footer class="bg-dark text-center text-white">
+      <div class="container p-4 pb-0">
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
 
-              <div class="col-lg-2">
-                <h3 class="pb-3">Company</h3>
-                <p class="m-0"><a href="">About</a></p>
-                <p class="m-0"><a href="">News</a></p>
-                <p class="m-0"><a href="">FAQ</a></p>
-                <p class="m-0"><a href="">Contact</a></p>
-              </div>
+          <!-- Twitter -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
 
-              <div class="col-lg-3">
-                <h3 class="pb-3">Address</h3>
-                <p>
-                  200,Green block, NewYork <br />
-                  +xx xx xxxxx xxxx
-                </p>
-                <a href="">email@exemplo.com</a>
-              </div>
+          <!-- Google -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
 
-              <div class="col-lg-5">
-                <h3 class="pb-3">Newsletter</h3>
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
 
-                <form action="" class="d-flex">
-                  <input type="email" class="sub p-3" placeholder="Email" />
-                  <button class="btns">Subscribe</button>
-                </form>
+          <!-- Linkedin -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
 
-                <div class="icon d-flex text-center pt-5">
-                  <div class="circle p-2">
-                    <i class="fab facebook-f"></i>
-                  </div>
-
-                  <div class="circle p-2 mx-3">
-                    <i class="fab twitter"></i>
-                  </div>
-
-                  <div class="circle p-2">
-                    <i class="fab instagram"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <hr />
-            <p class="text-center pb-3 Copy">
-              Copyrigth @2022 All rigths reserved | Template produzido por Juan
-              Pablo e Matheus Aparecido
-            </p>
-          </div>
-        </div>
+          <!-- Github -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
       </div>
-    </section>
 
-    <script>
-      var containerE1 = document.querySelector("./container1");
-      var mixer = mixitup(containerE1);
-    </script>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 Copyright - Desenvolvido por Matheus Aparecido e
+        <a class="text-white" href="https://juanpablofarias.com.br"
+          >Juan Pablo Farias</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.js"></script>
+    <script>
+      let coffees = [
+        {
+          title: "Café Cápsula Cerrado",
+          type: "capsula",
+          price: "22,99",
+          buyLink: "https://test.com/cafe",
+          imageLink: "./imgs/cafe/cafe1.webp",
+        },
+        {
+          title: "Café Cápsula Caseiro",
+          type: "capsula",
+          price: 23.99,
+          buyLink: "https://test.com/cafe",
+          imageLink: "./imgs/cafe/cafe2.webp",
+        },
+        {
+          title: "Café Cápsula Espresso Roast",
+          type: "capsula",
+          price: 23.99,
+          oldPrice: 50,
+          buyLink: "https://test.com/cafe",
+          imageLink: "./imgs/cafe/cafe3.webp",
+        },
+        {
+          title: "Café Cápsula Ristretto",
+          type: "capsula",
+          price: 23.99,
+          buyLink: "https://test.com/cafe",
+          imageLink: "./imgs/cafe/cafe4.webp",
+        },
+        {
+          title: "Café Grão Ristretto",
+          type: "grao",
+          price: 23.99,
+          buyLink: "https://test.com/cafe",
+          imageLink: "./imgs/cafe/cafe5.webp",
+        },
+        {
+          title: "Café Grão Ristretto",
+          type: "grao",
+          price: 23.99,
+          oldPrice: 27.99,
+          buyLink: "https://test.com/cafe",
+          imageLink: "./imgs/cafe/cafe6.webp",
+        },
+        {
+          title: "Café Grão Ristretto",
+          type: "grao",
+          price: 23.99,
+          buyLink: "https://test.com/cafe",
+          imageLink: "./imgs/cafe/cafe7.webp",
+        },
+      ];
+
+      function formatedCoffee(coffee, col = 3) {
+        const { title, price, type, buyLink, imageLink, oldPrice } = coffee;
+        let theme = "";
+        const discount = (((oldPrice - price) * 100) / oldPrice).toFixed(0);
+        const theme1 = `
+        <div class="col-lg-${col} p-1 mix ${type}">
+        <div class="border rounded d-flex flex-column h-100">
+          <div class="card border-0">
+            <img src="${imageLink}" class="img-fluid" alt="" />
+            ${
+              oldPrice > price
+                ? `<div class="discount">-${String(discount)}%</div>`
+                : ``
+            }
+            <a href="${buyLink}">
+              <div class="circle1">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+            </a>
+          </div>
+          <div class="card-footer border-0 text-center bg-white flex-fill d-flex flex-column justify-content-between">
+            <h5>${title}</h5>
+            <p class="m-0">R$${price}</p>
+          </div>
+        </div>
+      </div>
+      `;
+        theme = theme1;
+        return theme;
+      }
+
+      let gallery = document.querySelector(".gallery-container");
+      let promo = document.querySelector(".gallery-promo");
+
+      coffees.forEach((coffee) => {
+        gallery.innerHTML += formatedCoffee(coffee);
+        if (coffee.oldPrice > coffee.price) {
+          promo.innerHTML += formatedCoffee(coffee, (col = 3));
+        }
+      });
+    </script>
+
+    <script></script>
+
+    <script>
+      var containerE1 = document.querySelector(".gallery-container");
+      var mixer = mixitup(containerE1);
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
